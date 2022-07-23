@@ -1,0 +1,22 @@
+
+DESIGN SYSTEM
+
+- Spacing system (px)
+4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 / 128 / 192 / 256 / 384 / 512 / 640 / 768
+
+- Type scale (font size) (px)
+12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 48 / 60 / 72
+
+- letter spacing (px)
+.5 /
+
+- border-radius (px)
+5 /
+
+... ...
+PAGES
+1 Landing
+2 Register
+3 Login
+4 List All Projects
+5 View Single Project

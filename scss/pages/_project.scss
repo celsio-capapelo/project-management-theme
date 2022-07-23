@@ -1,0 +1,219 @@
+body {
+  & > div {
+    & .content {
+      background-color: $color-grey-lightest;
+      margin-left: 6.4rem;
+      margin-right: $m-size;
+    }
+    .project {
+      margin-top: 24px;
+      &__details {
+        & > div > label {
+          margin-bottom: 0.8rem;
+
+          &:last-of-type {
+            margin-top: 2.4rem;
+          }
+        }
+      }
+      &__owner {
+        outline: 2px solid $color-primary;
+      }
+    }
+    .form {
+      width: 100%;
+      padding: 0.8rem;
+
+      &__group {
+        display: block;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &--add-task {
+        gap: 0.8rem;
+        padding: 0.8rem;
+        background-color: #fff;
+        border: 1px solid transparent;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          height: 60%;
+          width: 4px;
+          position: absolute;
+          left: -1px;
+          top: 20%;
+        }
+
+        &.cat {
+          &--a {
+            &::before {
+              background-color: $color-primary;
+            }
+          }
+          &--b {
+            &::before {
+              background-color: $color-grey-light-2;
+            }
+          }
+          &--c {
+            .due {
+              color: $color-danger-light-2;
+            }
+            &::before {
+              background-color: $color-danger;
+            }
+          }
+        }
+        & i[class*="la-trash-alt"] {
+          opacity: 0;
+          cursor: pointer;
+          font-size: 2.4rem;
+          color: $color-grey-light-2;
+        }
+        &:hover i[class*="la-trash-alt"] {
+          opacity: 1;
+        }
+        & .due {
+          font-size: 1.2rem;
+          color: $color-grey-light-2;
+        }
+        &:focus-within {
+          border: 1px solid $color-grey-light-2;
+        }
+        &:not(last-child) {
+          margin-bottom: 0.8rem;
+        }
+        input[type="text"] {
+          border: none;
+          flex-grow: 1;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        & .input-group {
+          input[type="checkbox"] {
+            display: none;
+          }
+          &__square {
+            display: block;
+            height: 18px;
+            width: 18px;
+            border: 1px solid $color-primary-light-1;
+            border-radius: 3px;
+          }
+          &__label {
+            position: relative;
+
+            & .update__icon {
+              position: absolute;
+              left: 0;
+              top: -8px;
+              display: none;
+            }
+          }
+          & > input:checked ~ label > .update__icon {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .update,
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.4);
+
+    padding: 2rem;
+
+    &__title {
+      margin-bottom: 0.8rem;
+      margin-top: 0.8rem;
+      color: $color-grey-light-2;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    &__item {
+      &:not(last) {
+        margin-bottom: 0.8rem;
+      }
+    }
+    &__box {
+      display: inline-block;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &__icon {
+      font-size: 24px;
+      color: $color-primary;
+    }
+    & .assigned {
+      span:first-child {
+        font-weight: bold;
+        color: #000;
+        text-decoration: underline;
+      }
+      span:last-child {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+// @keyframes infiniteTextScrolling {
+//   0% {
+//     transform: translateX(100%);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
+// .scroll-container {
+//   border: 3px solid black;
+//   border-radius: 5px;
+//   overflow: hidden;
+// }
+
+// .scroll-text {
+//   /* animation properties */
+//   -moz-transform: translateX(100%);
+//   -webkit-transform: translateX(100%);
+//   transform: translateX(100%);
+
+//   -moz-animation: my-animation 15s linear infinite;
+//   -webkit-animation: my-animation 15s linear infinite;
+//   animation: my-animation 15s linear infinite;
+// }
+
+/* for Firefox */
+// @-moz-keyframes my-animation {
+//   from {
+//     -moz-transform: translateX(100%);
+//   }
+//   to {
+//     -moz-transform: translateX(-100%);
+//   }
+// }
+
+/* for Chrome */
+// @-webkit-keyframes my-animation {
+//   from {
+//     -webkit-transform: translateX(100%);
+//   }
+//   to {
+//     -webkit-transform: translateX(-100%);
+//   }
+// }
+
+// @keyframes my-animation {
+//   from {
+//     -moz-transform: translateX(100%);
+//     -webkit-transform: translateX(100%);
+//     transform: translateX(100%);
+//   }
+// }

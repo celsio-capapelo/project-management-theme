@@ -1,0 +1,96 @@
+// Layout
+.container {
+  margin: 0 6.4rem !important;
+}
+.grid {
+  display: grid !important;
+
+  &--2-rows {
+    grid-template-rows: min-content 1fr !important;
+  }
+
+  &--2-rows-rev {
+    grid-template-rows: 1fr min-content !important;
+  }
+
+  &--1-col {
+    grid-template-columns: 1fr !important;
+  }
+
+  &--2-cols {
+    grid-template-columns: 1fr 40rem !important;
+  }
+
+  &--3c {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  &--full-row {
+    grid-column: 1 / -1 !important;
+  }
+
+  &-item--h-center {
+    justify-self: center !important;
+  }
+
+  &-item--v-center {
+    align-self: center !important;
+  }
+  .align-start {
+    align-items: start !important;
+  }
+  .span-2c {
+    grid-column: 1 / span 2 !important;
+  }
+
+  &-gap-m {
+    grid-gap: 2rem !important;
+  }
+}
+
+// Spacing
+$m-size: 2rem !important;
+
+.flex {
+  display: flex !important;
+}
+.justify-sb {
+  justify-content: space-between !important;
+}
+.align-c {
+  align-items: center !important;
+}
+
+.gap-xs {
+  gap: 0.4rem !important;
+}
+.gap-s {
+  gap: 1.2rem !important;
+}
+
+.gap-m {
+  gap: 3.2rem !important;
+}
+
+// Display
+.display-ib {
+  display: inline-block !important;
+}
+
+// Text align
+.text-align-r {
+  text-align: right !important;
+}
+
+// Center block element
+.block-align-c {
+  display: block !important;
+  margin-inline: auto !important;
+  width: max-content !important;
+}
+
+.block-align-r {
+  display: block !important;
+  width: max-content !important;
+  margin-left: auto !important;
+}

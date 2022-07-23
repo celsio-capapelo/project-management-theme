@@ -1,0 +1,29 @@
+.navbar {
+  padding: 0.8rem 0;
+  background-color: #fff;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  & .app__img {
+    width: 3.2rem;
+  }
+
+  & .app__name {
+    text-transform: uppercase;
+  }
+
+  & .profile__img {
+    height: 3.2rem;
+    border-radius: 100rem;
+  }
+}

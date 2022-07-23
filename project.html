@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login &mdash; PROJECTIST</title>
+    <link
+      rel="stylesheet"
+      href="line-awesome-1.3.0/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE START -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- STYLE END -->
+  </head>
+  <body class="grid grid--1-col grid--2-rows">
+    <!-- NAVBAR START -->
+    <nav class="navbar grid--full-row">
+      <div class="container">
+        <div class="navbar__group">
+          <img class="app__img" src="images/logo.png" alt="Application logo" />
+          <span class="app__name">projectist</span>
+        </div>
+        <div class="navbar__group">
+          <img class="profile__img" src="images/profile.png" alt="" />
+          <span class="profile__name">Dastan</span>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="grid grid--2-cols grid--2-rows-rev">
+      <!-- CONTENT_AREA START -->
+      <main class="content">
+        <!-- BREADCRUMB START -->
+        <div class="breadcrumb flex justify-sb">
+          <div><a href="projects.html">My Projects</a> / <span>Project title</span></div>
+          <div class="flex align-c gap-xs">
+            <img class="profile__img" src="images/profile.png" alt="" />
+            <img class="profile__img" src="images/profile.png" alt="" />
+            <img class="profile__img project__owner" src="images/profile.png" alt="" />
+            <button class="btn">Invite to Project</button>
+          </div>
+        </div>
+        <!-- BREADCRUMB END -->
+        <div class="grid grid--3c align-start grid-gap-m project__details">
+          <div class="span-2c">
+            <div class="flex justify-sb task__header">
+            <label class="form__label">Tasks</label> 
+            <button type="button" class="btn btn--s flex align-c gap-xs task__add">
+              <i class="las la-plus"></i>
+              <span>Add Task</span></span>
+            </button>
+            </div>
+            <form class="form--add-task form--rounded cat--a flex align-c" action="#">
+              <input
+                value="Profissionally Clean"
+                name="email"
+                class=""
+                id="email"
+                type="text"
+              />
+              <i class="las la-trash-alt"></i>
+              <span class="due">Due Tomorrow</span>
+              <div class="input-group">
+                <input
+                  type="checkbox"
+                  name="first-task"
+                  id="first-task"
+                />
+                <label for="first-task"
+                  class="input-group__label name="first-task">
+                  <i class="las la-feather-alt update__icon"></i>
+                  <span class="input-group__square"></span>
+                </label>
+              </div>
+            </form>
+            <form class="form--add-task form--rounded cat--b flex align-c" action="#">
+              <input
+                value="Pressure Wash House"
+                name="email"
+                class=""
+                id="email"
+                type="text"
+              />
+              <i class="las la-trash-alt"></i>
+              <span class="due">Due Next Friday</span>
+              <div class="input-group">
+                <input
+                  type="checkbox"
+                  name="completed"
+                  id="completed"
+                />
+                <label for="completed"
+                  class="input-group__label name="completed">
+                  <i class="las la-feather-alt update__icon"></i>
+                  <span class="input-group__square"></span>
+                </label>
+              </div>
+            </form>
+            <form class="form--add-task form--rounded cat--c flex align-c" action="#">
+              <input
+                value="Walk the dog"
+                name=""
+                class=""
+                type="text"
+              />
+              <i class="las la-trash-alt"></i>
+              <span class="due">Due Today</span>
+             <div class="input-group">
+                <input
+                  type="checkbox"
+                  name="3_task"
+                  id="3_task"
+                />
+                <label for="3_task"
+                  class="input-group__label" name="3_task">
+                  <i class="las la-feather-alt update__icon"></i>
+                  <span class="input-group__square"></span>
+                </label>
+              </div>
+            </form>
+            <form class="form--add-task form--rounded cat--b flex align-c" action="#">
+              <input
+                value="Fix the computer noise"
+                name="email"
+                class=""
+                id="email"
+                type="text"
+              />
+              <i class="las la-trash-alt"></i>
+              <span class="due">Due Wednesday</span>
+              <div class="input-group">
+                <input
+                  type="checkbox"
+                  name="4_task"
+                  id="4_task"
+                />
+                <label for="4_task"
+                  class="input-group__label" name="4_task">
+                  <i class="las la-feather-alt update__icon"></i>
+                  <span class="input-group__square"></span>
+                </label>
+              </div>            
+            </form>
+
+            <label class="form__label" for="notes">General Notes</label>
+            <form class="form form--elevation-2" action="#">
+             <div class="form__group">
+                <textarea
+                  rows="5"
+                  value=""
+                  name="notes"
+                  class="form__input form__input--rounded"
+                  id="notes"
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <button class="btn">Save</button>
+              </div>
+            </form>
+          </div>
+          <div class="project">
+            <a href="#" class="project__title link">Project title</a>
+            <p class="project__excerpt">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="btn btn--link">Delete</button>
+          </div>
+        </div>
+      </main>
+      <!-- CONTENT_AREA END -->
+
+      <!-- SIDEBAR_AREA START -->
+      <aside class="sidebar update">
+        <h2 class="update__title">Latest Updates</h2>
+        <ul class="update__list">
+          <li class="update__item flex align-c gap-xs">
+            <span class="update__box">
+              <i class="las la-feather-alt update__icon"></i
+            ></span>
+            <span>You completed "Profissionally Clean"</span>
+          </li>
+        </ul>
+      </aside>
+      <!-- SIDEBAR_AREA END -->
+
+      <!-- FOOTER START -->
+      <footer class="footer grid--full-row">
+        <div class="">
+          <span>Projectist</span> &mdash; All projects under YOUR control.
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+  </body>
+</html>

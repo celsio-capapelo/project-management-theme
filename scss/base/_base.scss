@@ -1,0 +1,32 @@
+// Dev porpose ONLY
+.box {
+  border: 1px red dotted;
+}
+.pages {
+  margin-top: 3.2rem;
+}
+
+// Reset
+ul,
+ol {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  // outline: none;
+  box-shadow: 0 0 0 0.4rem $color-primary-light-2;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}

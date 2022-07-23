@@ -1,0 +1,27 @@
+////////////////////////////////////
+// Auth
+.auth {
+  background-color: rgba(238, 238, 238, 0.5);
+
+  & > div {
+    margin-top: 4.8rem;
+    width: 350px;
+  }
+
+  & .btn--link {
+    margin-left: 0.8rem;
+    text-decoration: underline;
+  }
+
+  &--login {
+    .navbar__group:last-child a:first-child {
+      font-weight: bold;
+    }
+  }
+
+  &--register {
+    .navbar__group:last-child a:last-child {
+      font-weight: bold;
+    }
+  }
+}

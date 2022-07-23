@@ -1,0 +1,125 @@
+ul,
+ol {
+  list-style: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #f1f1f4;
+  font-size: 1.4rem;
+  color: #68667f;
+  height: 100%; }
+
+.box {
+  border: 1px red dotted; }
+
+.pages {
+  margin-top: 3.2rem; }
+
+.container {
+  margin: 0 6.4rem; }
+
+.grid {
+  display: grid; }
+  .grid--2-rows {
+    grid-template-rows: min-content 1fr; }
+  .grid--2-rows-rev {
+    grid-template-rows: 1fr min-content; }
+  .grid--1-col {
+    grid-template-columns: 1fr; }
+  .grid--2-cols {
+    grid-template-columns: 1fr 40rem; }
+  .grid--3c {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid--full-row {
+    grid-column: 1 / -1; }
+  .grid-item--h-center {
+    justify-self: center; }
+  .grid-item--v-center {
+    align-self: center; }
+  .grid-gap-m {
+    grid-gap: 2rem; }
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  background-color: #47cdff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit; }
+
+.btn--link {
+  background-color: #fff;
+  padding: 0;
+  color: inherit; }
+
+.link:link,
+.link:visited {
+  text-decoration: none; }
+
+.link--auth {
+  color: #47cdff;
+  font-size: 1.6rem; }
+
+.form {
+  background-color: #fff;
+  padding: 3.2rem;
+  width: 35rem; }
+  .form__group {
+    text-align: left;
+    margin-bottom: 1.6rem; }
+  .form__label {
+    display: block;
+    margin-bottom: 0.4rem; }
+  .form__input {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(174, 173, 189, 0.5); }
+    .form__input:focus {
+      outline: none; }
+    .form__input.checkbox {
+      display: inline-block;
+      width: min-content; }
+    .form__input--rounded {
+      border-radius: 3px; }
+
+.form--elevation-2 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+.form--rounded {
+  border-radius: 5px; }
+
+.navbar {
+  padding: 0.8rem 0;
+  background-color: #fff; }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .navbar__group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; }
+  .navbar .app__img {
+    width: 3.2rem; }
+  .navbar .app__name {
+    text-transform: uppercase; }
+  .navbar .profile__img {
+    height: 3.2rem;
+    border-radius: 100rem; }
+
+body > div .content {
+  margin-left: 6.4rem; }
+
+body > div .footer {
+  background-color: #fff; }

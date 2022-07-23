@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login &mdash; PROJECTIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth auth--register grid grid--1-col grid--2-rows"">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__group"></div>
+        <div class="navbar__group">
+          <a href="/login.html" class="link link--auth">Login</a>
+          <a href="/register.html" class="link link--auth">Register</a>
+        </div>
+      </div>
+    </nav>
+    <div class="grid-item--h-center">
+      <form class="form form--elevation-2 form--rounded" action="#">
+        <div class="form__group">
+          <label class="form__label" for="name">Name</label>
+          <input
+            value=""
+            name="name"
+            class="form__input form__input--rounded"
+            id="name"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Email address</label>
+          <input
+            value=""
+            name="email"
+            class="form__input form__input--rounded"
+            id="email"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="password">Password</label>
+          <input
+            value=""
+            name="password"
+            class="form__input form__input--rounded"
+            id="password"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="confirm">Confirm Password</label>
+          <input
+            value=""
+            name="confirm"
+            class="form__input form__input--rounded"
+            id="confirm"
+          />
+        </div>
+        <div class="form__group">
+          <button class="btn">Register</button>
+          <button class="btn btn--link">Already registered?</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

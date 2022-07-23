@@ -1,0 +1,15 @@
+.landing {
+  text-align: center;
+  &__title {
+    font-size: 6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+}

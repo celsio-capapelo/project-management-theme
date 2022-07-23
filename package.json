@@ -1,0 +1,17 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss css/style.css -w",
+    "compile:landing": "node-sass scss/landing.scss css/landing.css -w",
+    "compile:auth": "node-sass scss/auth.scss css/auth.css -w",
+    "compile:project": "node-sass scss/project.scss css/project.css -w"
+  },
+  "author": "Célsio Capapelo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

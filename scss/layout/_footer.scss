@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-white;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  & > div {
+    animation: infiniteTextScrolling 30s linear infinite;
+    overflow: hidden;
+    & > span {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color-primary;
+      letter-spacing: 0.5px;
+    }
+  }
+}
